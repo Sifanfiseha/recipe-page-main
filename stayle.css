@@ -1,0 +1,92 @@
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Stone-100: hsl(30, 54%, 90%);
+    --Stone-150: hsl(30, 18%, 87%);
+    --Stone-600: hsl(30, 10%, 34%);
+    --Stone-900: hsl(24, 5%, 18%);
+    --Brown-800: hsl(14, 45%, 36%);
+    --Rose-800: hsl(332, 51%, 32%);
+    --Rose-50: hsl(330, 100%, 98%);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--Stone-100);
+}
+.main {
+    width: 740px;
+    margin: 50px auto;
+    /* bordertop-radius: 23px; */
+    border-radius: 23px;
+    padding: 44px;
+    background-color: var(--White);
+}
+img {
+    max-width: 100%;
+    border-radius: 15px;
+    padding-bottom: 20px;
+    overflow: hidden;
+}
+h1 {
+    font-size: 2.9rem;
+    padding-bottom: 60px 0;
+    color: black;
+}
+p {
+    font-size: 1rem;
+    /* padding: 20px 0; */
+}
+.list {
+    background-color: var(--Rose-50);
+    padding: 0 20px 20px 20px;
+    border-radius: 20px;
+}
+h2 {
+    color: var(--Brown-800);
+    padding: 20px 0;
+}
+.list-order li {
+    padding: 20xp;
+    /* display: inline-block; */
+    /* margin-left: 20px; */
+}
+.nutrition-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+.nutrition-container h2 {
+    font-size: 24px;
+    color: #8a4a23;
+    margin-bottom: 10px;
+}
+.nutrition-container p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+}
+.nutrition-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.nutrition-table th,
+.nutrition-table td {
+    text-align: left;
+    padding: 8px 0;
+}
+.nutrition-table th {
+    font-weight: normal;
+    color: #555;
+}
+.nutrition-table td {
+    font-weight: bold;
+    color: #8a4a23;
+}
+.nutrition-table tr:not(:last-child) {
+    border-bottom: 1px solid #ddd;
+}
