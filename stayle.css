@@ -61,7 +61,11 @@ ul {
 }
 ul li {
     position: relative;
+    padding: 0.5rem;
     padding-left: 2rem;
+}
+ol li {
+    padding: 0.5rem;
 }
 ul li::before {
     content: "•";
