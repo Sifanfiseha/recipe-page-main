@@ -15,11 +15,9 @@
 }
 body {
     background-color: var(--Stone-100);
+    width: 100%;
 }
 .main {
-    width: 740px;
-    margin: 50px auto;
-    /* bordertop-radius: 23px; */
     border-radius: 23px;
     padding: 44px;
     background-color: var(--White);
@@ -52,6 +50,26 @@ h2 {
     padding: 20xp;
     /* display: inline-block; */
     /* margin-left: 20px; */
+}
+ul,
+ol {
+    list-style-position: inside;
+}
+ul {
+    margin-right: 2rem;
+    list-style: none;
+}
+ul li {
+    position: relative;
+    padding-left: 2rem;
+}
+ul li::before {
+    content: "•";
+    font-size: 1.3rem;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
 }
 .nutrition-container {
     background-color: #fff;
@@ -89,4 +107,22 @@ h2 {
 }
 .nutrition-table tr:not(:last-child) {
     border-bottom: 1px solid #ddd;
+}
+@media (max-width: 375px) {
+    .main {
+        width: 45rem;
+        margin: 0;
+        border-radius: 0;
+        padding: 2rem;
+        margin: 0;
+    }
+}
+@media (min-width: 720px) {
+    .main {
+        width: 45rem;
+        margin: 15vh 0;
+        border-radius: 20px;
+        padding: 2rem;
+        margin: 50px auto;
+    }
 }
